@@ -19,8 +19,8 @@ for _ in range(t):
     else:
         print("False")
         
-//To find if a string can be rearranged to from a palindrome
-/* 1
+'''To find if a string can be rearranged to from a palindrome
+1
 aabb -
-true */
+true ''' 
 
