@@ -1,14 +1,14 @@
-#include <bits/stdc++.h> 
+#include <bits/stdc++.h>                                                        
 bool isSubset(int arr1[], int arr2[], 
 			int n, int m) 
 { 
 	int i = 0; 
 	int j = 0; 
-	for (i = 0; i < n; i++) 
+	for (i = 0; i < m; i++)            //a1 = [1 , 2 , 3 , 4 , 5]      a2 = [1 , 2 ,3] jumbled is ok too
 	{ 
-		for (j = 0; j < m; j++) 
+		for (j = 0; j < n; j++) 
 		{ 
-			if (arr2[j] == arr1[i]) 
+			if (arr1[i] == arr2[j])
 				break; 
 		} 
 		if (j == n) 
@@ -26,7 +26,7 @@ int main()
     {
         cin>>a1[i];
     }
-    for(int j =0;j<n;j++)
+    for(int j =0;j<m;j++)
     {
         cin>>a2[j];
     }
